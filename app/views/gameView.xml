@@ -1,0 +1,7 @@
+<Alloy>
+	<View id="gameView">
+		<View id="player1View"/>
+		<View id="player2View"/>
+		<View id="separatorView"/>
+	</View>
+</Alloy>
