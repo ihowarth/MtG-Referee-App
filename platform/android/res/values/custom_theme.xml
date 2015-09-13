@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Theme.NormalTheme" parent="Theme.Titanium">
+        <item name="android:windowFullscreen">false</item>
+    </style>
+</resources>

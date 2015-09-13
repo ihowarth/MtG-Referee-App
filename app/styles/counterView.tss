@@ -1,4 +1,48 @@
+"#counterView": {},
 
-".container" : {
-  
+"#lifeLabelsContainer": {
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    layout: "vertical",
+    touchEnabled: false
+},
+"#changeLabel": {
+    font: {
+        fontSize: 20
+    },
+    color: "#fff",
+    touchEnabled: false
+},
+"#currentLifeLabel": {
+    top: 5,
+    font: {
+        fontSize: 40
+    },
+    color: "#fff",
+    touchEnabled: false
+},
+
+"#minusSideView": {
+    left: 0,
+    width: "50%"
+},
+"#plusSideView": {
+    right: 0,
+    width: "50%"
+},
+
+".changeLabel": {
+    font: {
+        fontSize: 50
+    },
+    color: "#fff",
+    touchEnabled: false
+},
+"#minusLabel": {
+    left: 25,
+    text: "-"
+},
+"#plusLabel": {
+    right: 25,
+    text: "+"
 }

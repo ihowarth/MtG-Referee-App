@@ -4,6 +4,9 @@
  * Latest Revision : 12th September 2015
  ***************************************/
 
+// Keep app alive on iOS
+Titanium.App.idleTimerDisabled = true;
+
 /*
  * APP singleton
  */

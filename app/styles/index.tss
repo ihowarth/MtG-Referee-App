@@ -1,3 +1,7 @@
 "#mainWin": {
     backgroundColor: Alloy.Globals.colors.mainWinBackground
+},
+// Keep app alive on Android
+"#mainWin[platform=android]": {
+    keepScreenOn: true
 }

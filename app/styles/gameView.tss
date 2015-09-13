@@ -1,0 +1,18 @@
+"#gameView": {},
+
+"#player1View": {
+    left: 0,
+    width: "50%",
+    backgroundColor: "red"
+},
+"#player2View": {
+    right: 0,
+    width: "50%",
+    backgroundColor: "blue"
+}
+
+"#separatorView": {
+    width: 1,
+    backgroundColor: "#fff",
+    zIndex: 1
+}
