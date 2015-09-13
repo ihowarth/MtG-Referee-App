@@ -31,10 +31,29 @@ var args = arguments[0] || {};
 })();
 
 function addEventListeners() {
-
+    //TODO - coinFlipLabel event
+    
+    //TODO - diceRollLabel event
 }
 
 
 /*
  * Main functions
  */
+function flipCoin() {
+    var coinValue;
+    
+    //TODO: Randomly get heads or tails from an Array containing heads and tails
+    
+    
+    alert(coinValue);
+}
+
+function rollDice(howManySides) {
+    var diceValue;
+    
+    //TODO: Randomly get a number from an Array containing the amount of sides passed as an argument
+    
+    
+    alert(diceValue);   
+}

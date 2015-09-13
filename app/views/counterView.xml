@@ -1,14 +1,14 @@
 <Alloy>
     <View id="counterView">
-        <View id="lifeLabelsContainer">
-        	<Label id="changeLabel"/>
-        	<Label id="currentLifeLabel"/>
-        </View>
-        <View id="minusSideView">
-            <Label class="changeLabel" id="minusLabel"/>
-        </View>
-        <View id="plusSideView">
-            <Label class="changeLabel" id="plusLabel"/>
-        </View>
+    	<View id="horizontalContainerView">
+    		<Label class="changeLabel" id="minusLabel"/>
+    		<View id="lifeLabelsContainer">
+	        	<Label id="changeLabel"/>
+	        	<Label id="currentLifeLabel"/>
+	        </View>
+	        <Label class="changeLabel" id="plusLabel"/>
+		</View>
+		<View id="minusSideView"/>
+	    <View id="plusSideView"/>
     </View>
 </Alloy>
