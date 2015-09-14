@@ -3,6 +3,7 @@ var args = arguments[0] || {};
 /*
  * Global variables
  */
+var lifeAmount = 20;
 
 /*
  * Initialisation functions - only executed once
@@ -15,13 +16,15 @@ var args = arguments[0] || {};
 	addEventListeners();
 
 	$.player1View.add(Alloy.createController("counterView", {
-		//TODO
-		//lifeAmount : CHOOSE
+
+		lifeAmount : lifeAmount
+
 	}).getView());
 
 	$.player2View.add(Alloy.createController("counterView", {
-		//TODO
-		//lifeAmount : CHOOSE
+
+		lifeAmount : lifeAmount
+
 	}).getView());
 })();
 
@@ -40,11 +43,16 @@ function addEventListeners() {
 	$.diceRollLabel.addEventListener("click", function(e) {
 		alert(getRandomNumber(6));
 	});
+
+	$.resetButtonLabel.addEventListener("click", function(e) {
+		console.log("Reset");
+	});
+
 }
 
 /*
  * Main functions
- * 
+ *
  * getRandomNumber
  */
 

@@ -1,55 +1,55 @@
 "#counterView": {},
 
-"#horizontalContainerView" : {
+"#horizontalContainerView": {
 	height: Ti.UI.SIZE,
-    width: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
 	layout: "horizontal"
 },
 
 "#lifeLabelsContainer": {
-	left : 50,
-    height: Ti.UI.SIZE,
-    width: Ti.UI.SIZE,
-    layout: "vertical",
-    touchEnabled: false
+	left: 50,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	layout: "vertical",
+	touchEnabled: false
 },
 "#changeLabel": {
-    font: {
-        fontSize: 30
-    },
-    color: "#fff",
-    touchEnabled: false
+	font: {
+		fontSize: 30
+	},
+	color: "#fff",
+	touchEnabled: false
 },
 "#currentLifeLabel": {
-    top: 5,
-    font: {
-        fontSize: 60
-    },
-    color: "#fff",
-    touchEnabled: false
+	top: 5,
+	font: {
+		fontSize: 60
+	},
+	color: "#fff",
+	touchEnabled: false
 },
 
 ".changeLabel": {
-    font: {
-        fontSize: 70
-    },
-    color: "#fff",
-    touchEnabled: false
+	font: {
+		fontSize: 70
+	},
+	color: "#fff",
+	touchEnabled: false
 },
-"#minusLabel": {    
-    text: "-"
+"#minusLabel": {
+	text: "-"
 },
 "#plusLabel": {
-	left : 50,
-    text: "+"
+	left: 50,
+	text: "+"
 }
 
 
 "#minusSideView": {
-    left: 0,
-    width: "50%"
+	left: 0,
+	width: "50%"
 },
 "#plusSideView": {
-    right: 0,
-    width: "50%"
+	right: 0,
+	width: "50%"
 },
