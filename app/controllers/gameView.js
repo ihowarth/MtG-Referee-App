@@ -40,11 +40,16 @@ function addEventListeners() {
 	$.diceRollLabel.addEventListener("click", function(e) {
 		alert(getRandomNumber(6));
 	});
+	
+	$.resetButtonLabel.addEventListener("click", function(e) {
+		console.log ("Reset");
+	});
+
 }
 
 /*
  * Main functions
- * 
+ *
  * getRandomNumber
  */
 
