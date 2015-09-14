@@ -6,7 +6,6 @@ var args = arguments[0] || {};
 var currentLife;
 var changeLifeAmount = 0;
 var changeTimer;
-var lifeAmount = 20;
 
 /*
  * Initialisation functions - only executed once
@@ -19,7 +18,7 @@ var lifeAmount = 20;
 	addEventListeners();
 
 	// Using currentLife so we don't have to parse currentLifeLabel
-	currentLife = lifeAmount;
+	currentLife = args.lifeAmount;
 	$.currentLifeLabel.text = currentLife;
 })();
 
