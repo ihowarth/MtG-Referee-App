@@ -1,7 +1,11 @@
 <Alloy>
 	<View id="gameView">
-		<View id="player1View"/>
-		<View id="player2View"/>
+		<View id="player1View">
+			<Widget src="counterView" id="counterView1"/>
+		</View>
+		<View id="player2View">
+			<Widget src="counterView" id="counterView2"/>
+		</View>
 		<View id="separatorView"/>
 		<View id="butonsContainerView">
 			<Label id="coinFlipLabel"/>
