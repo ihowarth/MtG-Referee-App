@@ -11,6 +11,13 @@
 	backgroundColor: "blue"
 },
 
+"#counterView1" : {
+	lifeAmount: 20
+},
+"#counterView2" : {
+	lifeAmount: 20
+}
+
 "#separatorView": {
 	width: 2,
 	backgroundColor: "#fff",
@@ -36,8 +43,7 @@
 	height: 40,
 	left: 20,
 	text: " Reset Game ",
-	borderWidth: 1,
-	borderColor: "#000",
+	backgroundColor : "#fff",
 	color: "#000"
 },
 
