@@ -14,6 +14,7 @@ var lifeAmount = 20;
 
 (function init() {
     addEventListeners();
+    $.counterView1.setMinChangeAmount(70);
 })();
 
 function addEventListeners() {
