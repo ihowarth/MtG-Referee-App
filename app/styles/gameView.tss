@@ -1,57 +1,61 @@
 "#gameView": {},
 
 "#player1View": {
-	left: 0,
-	width: "50%",
-	backgroundColor: "red"
+    left: 0,
+    width: "50%",
+    backgroundColor: "red"
 },
 "#player2View": {
-	right: 0,
-	width: "50%",
-	backgroundColor: "blue"
+    right: 0,
+    width: "50%",
+    backgroundColor: "blue"
 },
 
-"#counterView1" : {
-	lifeAmount: 20
-},
-"#counterView2" : {
-	lifeAmount: 20
-}
+"#counterView1": {},
+"#counterView2": {},
 
 "#separatorView": {
-	width: 2,
-	backgroundColor: "#fff",
-	zIndex: 1
+    width: 2,
+    backgroundColor: "#fff"
 },
 
-"#butonsContainerView": {
-	top: 15,
-	height: Ti.UI.SIZE,
-	width: Ti.UI.SIZE,
-	layout: "horizontal"
+"#topButtonsContainerView": {
+    top: 15,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    layout: "horizontal"
 },
-
 "#coinFlipLabel": {
-	height: 40,
-	text: " Flip Coin ",
-	borderWidth: 1,
-	borderColor: "#fff",
-	color: "#fff"
+    height: 40,
+    text: " Flip Coin ",
+    borderWidth: 1,
+    borderColor: "#fff",
+    color: "#fff"
 },
-
 "#resetButtonLabel": {
-	height: 40,
-	left: 20,
-	text: " Reset Game ",
-	backgroundColor : "#fff",
-	color: "#000"
+    height: 40,
+    left: 20,
+    text: " Reset Game ",
+    backgroundColor: "#fff",
+    color: "#000"
+},
+"#diceRollLabel": {
+    left: 20,
+    height: 40,
+    text: " Roll Die ",
+    borderWidth: 1,
+    borderColor: "#fff",
+    color: "#fff"
 },
 
-"#diceRollLabel": {
-	left: 20,
-	height: 40,
-	text: " Roll Die ",
-	borderWidth: 1,
-	borderColor: "#fff",
-	color: "#fff"
+"#bottomButtonsContainerView": {
+    bottom: 15,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE
+},
+"#abilitiesLabel": {
+    height: 40,
+    text: " Abilities ",
+    backgroundColor: "#fff",
+    color: "#000"
 }

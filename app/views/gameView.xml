@@ -7,10 +7,13 @@
 			<Widget src="counterView" id="counterView2"/>
 		</View>
 		<View id="separatorView"/>
-		<View id="butonsContainerView">
+		<View id="topButtonsContainerView">
 			<Label id="coinFlipLabel"/>
 			<Label id="resetButtonLabel"/>
 			<Label id="diceRollLabel"/>
+		</View>
+		<View id="bottomButtonsContainerView">
+			<Label id="abilitiesLabel"/>
 		</View>
 	</View>
 </Alloy>
