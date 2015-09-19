@@ -3,7 +3,7 @@ var args = arguments[0] || {};
 /*
  * Global variables
  */
-var lifeAmount = 20;
+var lifeAmount = 20; // Default
 
 /*
  * Initialisation functions - only executed once
@@ -14,7 +14,9 @@ var lifeAmount = 20;
 
 (function init() {
     addEventListeners();
-    $.counterView1.setMinChangeAmount(70);
+
+    $.counterView1.setStartingLifeAmount(lifeAmount);
+    $.counterView2.setStartingLifeAmount(lifeAmount);
 })();
 
 function addEventListeners() {
@@ -38,15 +40,15 @@ function addEventListeners() {
         var resetAlert = Ti.UI.createAlertDialog({
             title : "Are you sure you want to reset the counters?",
             buttonNames : ["OK", "Cancel"],
-            cancel : 2
-
+            destructive : 1
         });
 
         // Separating eventListener function so it can be removed
         function resetCounterViews(e) {
+            resetAlert.removeEventListener("click", resetCounterViews);
+
             // Only reset if the user clicks "OK"
             if (e.index == 0) {
-                resetAlert.removeEventListener("click", resetCounterViews);
                 $.counterView1.resetLifeAmount();
                 $.counterView2.resetLifeAmount();
             }
@@ -54,6 +56,11 @@ function addEventListeners() {
         resetAlert.addEventListener("click", resetCounterViews);
 
         resetAlert.show();
+    });
+    
+    $.abilitiesLabel.addEventListener("click", function(e) {
+        //TODO: Build abilities Widget
+        alert("Show abilities");
     });
 }
 

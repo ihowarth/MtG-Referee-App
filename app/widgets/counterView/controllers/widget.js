@@ -3,10 +3,13 @@ var args = arguments[0] || {};
 /*
  * Global variables
  */
+// Life managers
+var startingLifeAmount;
 var currentLife;
+// Change managers
 var changeLifeAmount = 0;
+var minChangeAmount = 1; // Default
 var changeTimer;
-var minChangeAmount = 1;
 
 /*
  * Initialisation functions - only executed once
@@ -17,10 +20,6 @@ var minChangeAmount = 1;
 
 (function init() {
 	addEventListeners();
-
-	// Using currentLife so we don't have to parse currentLifeLabel
-	currentLife = args.lifeAmount;
-	$.currentLifeLabel.text = currentLife;
 })();
 
 function addEventListeners() {
@@ -37,12 +36,9 @@ function addEventListeners() {
  * Main functions
  *
  * changeCurrentLife
+ * setMinChangeAmount
  * resetLifeAmount
  */
-
-function setMinChangeAmount(amount) {
-	minChangeAmount = amount;
-}
 
 function changeCurrentLife(amountToChange) {
 	// Clearing the timer each time the life is changed, so we can change it all in one go
@@ -68,14 +64,25 @@ function changeCurrentLife(amountToChange) {
 	}, 1000);
 }
 
+// This has to be the first function we call in the widget
+function setStartingLifeAmount(amount) {
+    startingLifeAmount = amount;
+    resetLifeAmount();
+}
+
+function setMinChangeAmount(amount) {
+    minChangeAmount = amount;
+}
+
 // Reset life amount allow users to start a new game again quickly
 function resetLifeAmount() {
-	currentLife = args.lifeAmount;
+	currentLife = startingLifeAmount;
 	$.currentLifeLabel.text = currentLife;
 }
 
 /*
  * Exports
  */
-exports.resetLifeAmount = resetLifeAmount; 
+exports.setStartingLifeAmount = setStartingLifeAmount;
 exports.setMinChangeAmount = setMinChangeAmount;
+exports.resetLifeAmount = resetLifeAmount; 
