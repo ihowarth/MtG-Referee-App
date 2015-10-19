@@ -1,0 +1,25 @@
+"#abilitiesView" : {
+	layout : "vertical",
+	backgroundColor : "#000"
+},
+"#navBarView" : {
+	height : 45,
+	backgroundColor : "#fff"
+},
+"#backLabel" : {
+	left : 15,
+	color : "#000",
+	text : "Back"
+},
+
+"#searchField" : {
+	width: 150,
+	color : "#000",
+	hintText : "Search",
+	hintTextColor : "#ccc"
+},
+
+"#keywordsTableView" : {
+	backgroundColor : "#fff",
+	top : 5
+}

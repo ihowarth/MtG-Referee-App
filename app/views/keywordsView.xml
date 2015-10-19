@@ -1,0 +1,9 @@
+<Alloy>
+	<View id="abilitiesView">
+		<View id="navBarView">
+			<Label id="backLabel"/>
+			<TextField id="searchField"/>
+		</View>
+		<TableView id="keywordsTableView"/>
+	</View>
+</Alloy>

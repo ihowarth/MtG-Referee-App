@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
     <string name="resetGameLabel"> Reset Game </string>
-    <string name="abilitiesLabel"> Abilities </string>
+    <string name="keywordsLabel"> Keywords </string>
     <string name="rollDieLabel"> Roll Die </string>
     <string name="flipCoinLabel"> Flip Coin </string>
 </resources>

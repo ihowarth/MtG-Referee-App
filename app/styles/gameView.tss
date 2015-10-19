@@ -27,7 +27,7 @@
 },
 "#coinFlipLabel": {
     height: 40,
-    text: " Flip Coin ",
+    text: L("flipCoinLabel"),
     borderWidth: 1,
     borderColor: "#fff",
     color: "#fff"
@@ -35,14 +35,14 @@
 "#resetButtonLabel": {
     height: 40,
     left: 20,
-    text: " Reset Game ",
+    text: L("resetGameLabel"),
     backgroundColor: "#fff",
     color: "#000"
 },
 "#diceRollLabel": {
     left: 20,
     height: 40,
-    text: " Roll Die ",
+    text: L("rollDieLabel"),
     borderWidth: 1,
     borderColor: "#fff",
     color: "#fff"
@@ -55,7 +55,7 @@
 },
 "#abilitiesLabel": {
     height: 40,
-    text: " Abilities ",
+    text: L("keywordsLabel"),
     backgroundColor: "#fff",
     color: "#000"
 }
