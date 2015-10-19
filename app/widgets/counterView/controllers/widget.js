@@ -36,8 +36,6 @@ function addEventListeners() {
  * Main functions
  *
  * changeCurrentLife
- * setMinChangeAmount
- * resetLifeAmount
  */
 
 function changeCurrentLife(amountToChange) {
@@ -63,6 +61,14 @@ function changeCurrentLife(amountToChange) {
 		$.changeLabel.text = "";
 	}, 1000);
 }
+
+/*
+ * Exported functions
+ * 
+ * setStartingLifeAmount
+ * setMinChangeAmount
+ * resetLifeAmount
+ */
 
 // This has to be the first function we call in the widget
 function setStartingLifeAmount(amount) {

@@ -2,7 +2,6 @@
  * Global variables
  */
 
-
 /*
  * Initialisation functions - only executed once
  *

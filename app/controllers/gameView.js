@@ -59,8 +59,15 @@ function addEventListeners() {
     });
     
     $.abilitiesLabel.addEventListener("click", function(e) {
-        //TODO: Build abilities Widget
-        alert("Show abilities");
+        var keywordsViewController = Alloy.createController("keywordsView", {
+            killSelf : function() {
+                $.gameView.remove(keywordsView);
+                APP.releaseAllMemoryOfView(keywordsView);
+            }
+        });
+        var keywordsView = keywordsViewController.getView(); 
+        
+        $.gameView.add(keywordsView);
     });
 }
 
